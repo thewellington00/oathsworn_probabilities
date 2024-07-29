@@ -52,3 +52,6 @@ As an example, let’s say we had a dice set of 1x white, 1x yellow and 2x red d
 dice = ('white', 'yellow', 'red', 'red')
 play_many_hands_with_fixed_dice_type(dice_colors=dice, rerolls=2, 10) 
 ```
+
+For more examples, check out the `dice.py` file. And for the code that generated the data in the spreadsheet, check out `run_simulation.py`. 
+
