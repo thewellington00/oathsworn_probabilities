@@ -52,3 +52,29 @@ As an example, let’s say we had a dice set of 1x white, 1x yellow and 2x red d
 dice = ('white', 'yellow', 'red', 'red')
 play_many_hands_with_fixed_dice_type(dice_colors=dice, rerolls=2, 10) 
 ```
+
+## My (Incomplete) Analytical Solutions
+
+### **Miss Probabilities**
+
+Calculating the chance of a miss is pretty straight forward analytically. We can use the binomial distribution to calculate it. 
+
+There are few different ways to leverage the binomial distribution here. What we’re going to do is use something called the “survival function”. This will tell us what’s the likelihood that we get at least this many blanks in a certain number of trials.
+
+We need to identify 3 key things: 
+
+- n: the number of dice we are going to throw (or number of “trials” in stats language)
+- k: number of success we want
+- p: the probability of success
+
+then the code is simply:
+
+```python
+binom.sf(blanks_for_a_miss-1, number_of_dice, 1/3)
+```
+
+### **The No critical & No rerolls case**
+
+If we ignore critical and rerolls then we can “brute force” the solution, i.e. we can count up every possibility, without needing a simulation. 
+
+### **Criticals and their infinite series**
