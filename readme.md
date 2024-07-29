@@ -53,6 +53,8 @@ dice = ('white', 'yellow', 'red', 'red')
 play_many_hands_with_fixed_dice_type(dice_colors=dice, rerolls=2, 10) 
 ```
 
+For more examples, check out the `dice.py` file. And for the code that generated the data in the spreadsheet, check out `run_simulation.py`.
+
 ## My (Incomplete) Analytical Solutions
 
 ### **Miss Probabilities**
