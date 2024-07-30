@@ -16,6 +16,14 @@ Ok, so here’s the quick run down on playing with dice in Oathsworn:
 2. Critical Hits
     1. Each die has one side that is a “critical hit”. For each die with a critical side up, you get to roll another die of the same color and add its value to the total damage. If you get another critical, you keep on rolling baby. Blanks drawn during this “critical hit run” do not cause, or contribute to, a miss.
 3. Different Color Dice
+    
+    | Color  | side 1 (blank) | side 2 (blank) | side 3 | side 4 | side 5 | side 6 (critical) |
+    |--------|----------------|----------------|--------|--------|--------|-------------------|
+    | White  | 0              | 0              | 1      | 1      | 2      | 2                 |
+    | Yellow | 0              | 0              | 1      | 2      | 3      | 3                 |
+    | Red    | 0              | 0              | 2      | 3      | 3      | 4                 |
+    | Black  | 0              | 0              | 3      | 3      | 4      | 5                 |
+
     1. There are white, yellow, red, and black dice. You can roll as many white dice as you like and depending on how many might cubes you have (what i also call “power ups”, my term not theirs), you can upgrade your white dice to the higher colors.
     2. Higher colors deal more damage (i.e. have higher numbers on them) but have the same probability of hitting a critical (i.e. 1 critical hit side) and missing (i.e. 2 blank sides) as white dice.
     3. The progression of dice, from worst to best, is white, yellow, red, and black. If you have 3 power ups, you can upgrade one die from white to black, or 2 whites to yellow and red, and so on.
@@ -36,7 +44,7 @@ To run the simulation we considered all possible combinations of 1, 2, 3, 4, 5, 
 
 Of course, these are simulated results and not analytical results so there is a margin error to the results. Likely that margin of error goes up as more dice are simulated. 
 
-To view the results in the google sheet click here.
+To view the results in the [google sheet click here](https://docs.google.com/spreadsheets/d/1I1y-YcnbjtPXDkg738gnyvt8z2pe54PS5-p6Fr5eZF8/edit?gid=1029466576#gid=1029466576).
 
 ## To Run a Simulation Yourself
 
